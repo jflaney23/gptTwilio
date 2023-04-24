@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT Test</title>
+</head>
+<body>
+    <h1>ChatGPT Test</h1>
+    <form method="POST">
+        <label for="user_input">Your message:</label>
+        <input type="text" name="user_input" required>
+        <button type="submit">Send</button>
+    </form>
+    {% if chatgpt_response %}
+        <p><strong>ChatGPT's response:</strong> {{ chatgpt_response }}</p>
+    {% endif %}
+</body>
+</html>
