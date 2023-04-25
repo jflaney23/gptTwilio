@@ -17,7 +17,7 @@ This is a simple Flask-based web application that integrates ChatGPT, an AI lang
 
 1. Clone this repository:
 ```
-git clone https://github.com/yourusername/chatgpt-twilio.git
+git clone https://github.com/jflaney23/gptTwilio.git
 ```
 
 2. Change to the project directory:
