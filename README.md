@@ -32,26 +32,21 @@ pip install -r requirements.txt
 
 4. Set up your OpenAI API key as an environment variable:
 ```
-export OPENAI_KEY=<your-openai-api-key>
+Put your key in the app.py "openai.api_key = "KEY_HERE"
 ```
 
-5. Set up your Twilio account SID, auth token, and phone number as environment variables:
-```
-export TWILIO_ACCOUNT_SID=<your-twilio-account-sid>
-export TWILIO_AUTH_TOKEN=<your-twilio-auth-token>
-export TWILIO_PHONE_NUMBER=<your-twilio-phone-number>
-```
 
 ## Usage
 
 1. Start your Flask app:
 ```
-python app.py
+flask run -h localhost -p 5002
 ```
+**I use 5002 because Mac has a weird bug if you use the default 5000.**
 
 2. Start ngrok in a new terminal window to expose your local server to the public:
 ```
-ngrok http 5000
+ngrok http 5002
 ```
 
 3. Copy the HTTPS forwarding URL provided by ngrok (e.g., https://yoursubdomain.ngrok.io).
